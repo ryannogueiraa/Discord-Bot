@@ -78,7 +78,7 @@ O projeto demonstra organização modular, integração com APIs externas e gere
 
 | Comando | Descrição |
 |----------|------------|
-| `!IA` | Faz perguntas para IA usando OpenAi |
+| `!ia` | Faz perguntas para IA usando OpenAi |
 | `!repetirsay` | O bot repete a mensagem enviada |
 
 ---
