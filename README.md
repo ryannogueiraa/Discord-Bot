@@ -52,6 +52,15 @@ O projeto demonstra organização modular, integração com APIs externas e gere
 
 ---
 
+### 👋 Sistema de Boas-Vindas
+
+- `bemvindomsg.py` → Sistema automático de mensagem de boas-vindas.
+- Envia uma mensagem quando um novo membro entra no servidor.
+
+⚠️ É necessário configurar manualmente o ID ou nome do canal onde a mensagem será enviada.
+
+---
+
 # 🧠 Comandos Disponíveis
 
 ## 🔨 Moderação
