@@ -29,3 +29,76 @@ O projeto demonstra organização modular, integração com APIs externas e gere
 
 # 📂 Estrutura do Projeto
 
+📁 projeto
+│── main.py
+│── .gitignore
+│
+└── 📁 cogs
+├── ban.py
+├── bemvindomsg.py
+├── clearmsg.py
+├── clima.py
+├── expulsar.py
+├── hora.py
+├── openai.py
+├── piada.py
+├── ping.py
+├── pptgame.py
+├── repetirsay.py
+└── suporte.py
+
+- `main.py` → Inicializa o bot e carrega os Cogs  
+- `cogs/` → Comandos organizados por funcionalidades  
+
+---
+
+# 🧠 Comandos Disponíveis
+
+## 🔨 Moderação
+
+| Comando | Descrição |
+|----------|------------|
+| `!ban` | Bane um usuário do servidor |
+| `!expulsar` | Expulsa um membro |
+| `!clearmsg` | Limpa mensagens do canal |
+| `!bemvindomsg` | Define mensagem de boas-vindas |
+
+---
+
+## 🌤️ Utilidades
+
+| Comando | Descrição |
+|----------|------------|
+| `!clima` | Consulta clima via OpenWeather |
+| `!hora` | Mostra o horário atual |
+| `!ping` | Responde com `pong` |
+
+---
+
+## 🤖 Inteligência Artificial
+
+| Comando | Descrição |
+|----------|------------|
+| `!openai` | Faz perguntas para IA |
+| `!repetirsay` | O bot repete a mensagem enviada |
+
+---
+
+## 🎮 Jogos & Diversão
+
+| Comando | Descrição |
+|----------|------------|
+| `!ppt` | Jogo Pedra, Papel e Tesoura |
+| `!piada` | Envia uma piada aleatória |
+
+---
+
+## 🎫 Sistema de Suporte
+
+| Comando | Descrição |
+|----------|------------|
+| `!suporte` | Cria sistema de ticket ou direciona para call |
+
+⚠️ **Importante:**  
+O comando `!suporte` requer configuração manual dos nomes dos canais dentro do servidor para funcionamento correto.
+
