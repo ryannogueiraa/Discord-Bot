@@ -34,18 +34,18 @@ O projeto demonstra organização modular, integração com APIs externas e gere
 │── .gitignore
 │
 └── 📁 cogs
-├── ban.py
-├── bemvindomsg.py
-├── clearmsg.py
-├── clima.py
-├── expulsar.py
-├── hora.py
-├── openai.py
-├── piada.py
-├── ping.py
-├── pptgame.py
-├── repetirsay.py
-└── suporte.py
+    ├── ban.py
+    ├── bemvindomsg.py
+    ├── clearmsg.py
+    ├── clima.py
+    ├── expulsar.py
+    ├── hora.py
+    ├── openai.py
+    ├── piada.py
+    ├── ping.py
+    ├── pptgame.py
+    └── suporte.py
+
 
 - `main.py` → Inicializa o bot e carrega os Cogs  
 - `cogs/` → Comandos organizados por funcionalidades  
@@ -61,7 +61,6 @@ O projeto demonstra organização modular, integração com APIs externas e gere
 | `!ban` | Bane um usuário do servidor |
 | `!expulsar` | Expulsa um membro |
 | `!clearmsg` | Limpa mensagens do canal |
-| `!bemvindomsg` | Define mensagem de boas-vindas |
 
 ---
 
@@ -79,7 +78,7 @@ O projeto demonstra organização modular, integração com APIs externas e gere
 
 | Comando | Descrição |
 |----------|------------|
-| `!openai` | Faz perguntas para IA |
+| `!IA` | Faz perguntas para IA usando OpenAi |
 | `!repetirsay` | O bot repete a mensagem enviada |
 
 ---
@@ -88,7 +87,7 @@ O projeto demonstra organização modular, integração com APIs externas e gere
 
 | Comando | Descrição |
 |----------|------------|
-| `!ppt` | Jogo Pedra, Papel e Tesoura |
+| `!ppt (escolha)` | Jogo Pedra, Papel e Tesoura |
 | `!piada` | Envia uma piada aleatória |
 
 ---
@@ -101,4 +100,35 @@ O projeto demonstra organização modular, integração com APIs externas e gere
 
 ⚠️ **Importante:**  
 O comando `!suporte` requer configuração manual dos nomes dos canais dentro do servidor para funcionamento correto.
+
+---
+
+## ⚠️ Configuração de Variáveis de Ambiente
+
+Antes de executar o bot, é **obrigatório** criar um arquivo `.env` na raiz do projeto para armazenar suas chaves privadas.
+
+Nunca coloque seu token diretamente no código.
+
+### 📄 Crie um arquivo chamado:
+
+```
+.env
+```
+
+### 📝 Dentro dele, adicione:
+
+```
+DISCORD_TOKEN=seu_token_do_bot_aqui
+OPENAI_TOKEN=sua_chave_openai_aqui
+OPENWEATHER_TOKEN=sua_chave_openweather_aqui
+```
+
+### 🔒 Importante
+
+- Não compartilhe seu arquivo `.env`
+- Adicione `.env` ao `.gitignore`
+- Nunca publique seus tokens no GitHub
+
+Essas chaves são privadas e dão controle total ao seu bot.
+
 
