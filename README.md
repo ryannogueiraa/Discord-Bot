@@ -8,7 +8,7 @@
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
   <img src="https://img.shields.io/badge/Discord.py-5865F2?style=for-the-badge&logo=discord&logoColor=white"/>
   <img src="https://img.shields.io/badge/OpenWeather-FFB703?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/OpenAI-10A37F?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Gemini-10A37F?style=for-the-badge"/>
 </p>
 
 ---
@@ -40,7 +40,7 @@ O projeto demonstra organização modular, integração com APIs externas e gere
     ├── clima.py
     ├── expulsar.py
     ├── hora.py
-    ├── openai.py
+    ├── gemini.py
     ├── piada.py
     ├── ping.py
     ├── pptgame.py
@@ -87,7 +87,7 @@ O projeto demonstra organização modular, integração com APIs externas e gere
 
 | Comando | Descrição |
 |----------|------------|
-| `!ia` | Faz perguntas para IA usando OpenAi |
+| `!ia` | Faz perguntas para IA usando Gemini |
 | `!repetirsay` | O bot repete a mensagem enviada |
 
 ---
@@ -128,7 +128,7 @@ Nunca coloque seu token diretamente no código.
 
 ```
 DISCORD_TOKEN=seu_token_do_bot_aqui
-OPENAI_TOKEN=sua_chave_openai_aqui
+GEMINI_TOKEN=sua_chave_openai_aqui
 OPENWEATHER_TOKEN=sua_chave_openweather_aqui
 ```
 
