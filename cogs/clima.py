@@ -6,7 +6,6 @@ from dotenv import load_dotenv
 
 load_dotenv()
 TOKEN = os.getenv('WEATHER_TOKEN')
-print("token carregado!")
 
 class Clima(commands.Cog):
     def __init__(self, bot):
