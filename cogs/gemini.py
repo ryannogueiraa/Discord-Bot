@@ -26,7 +26,6 @@ class Gemini(commands.Cog):
         msg = await ctx.send("💭 Pensando...")
         
         try:
-            
             response = self.client.models.generate_content(
                 model="gemini-2.5-flash",
                 contents=pergunta,
@@ -45,6 +44,10 @@ class Gemini(commands.Cog):
         except Exception as e:
             await msg.edit(content="⚠️ Erro ao gerar resposta. Aguarde um momento e tente novamente.")
             print(f"Erro IA: {e}")
+    @ia.error
+    async def ia_error(self, ctx, error):
+        if isinstance(error, commands.CheckFailure):
+            await ctx.send("🚫 **Acesso Negado:** Você não tem permissão para usar a inteligência artificial do servidor.")       
 
 async def setup(bot):
     await bot.add_cog(Gemini(bot))
